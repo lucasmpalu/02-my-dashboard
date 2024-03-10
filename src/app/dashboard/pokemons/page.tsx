@@ -7,10 +7,8 @@ const getPokemons = async(limit: number = 20, offset: number = 0): Promise<Simpl
     const data: PokemonsResponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`)
     .then( res => res.json())
 
-
     //ESTE ERROR VA A SALIR EN EL CARTEL QUE GENERA NEXT, SI YO LO DEJO ASÍ, SIEMPRE VA A DAR EL ERROR, ESTO LO TENEMOS QUE AGARRAR EN EL CATCH CREO
     // throw new Error('Esto es un error que no debería de suceder');
-
 
     let pokemons = data.results.map(pokemon => (
       // el split va a sacar las barras del url y voy a tomar la posición -2 que es el numero del pokemon en la url

@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import { SimplePokemon } from '../interfaces/simple-pokemon';
 import Image from 'next/image';
 import PokemonCard from './PokemonCard';

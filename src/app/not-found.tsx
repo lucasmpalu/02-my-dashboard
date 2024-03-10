@@ -1,5 +1,6 @@
 //TIENE QUE LLAMARSE ASÍ, NOT-FOUND.TSX
 //CUANDO ALGUIEN PONE ALGÚN URL QUE NO ES RECONOCIDO O ESCRIBIÓ MAL EL URL
+//HAY QUE PONERLO A LA MISMA ALTURA QUE DONDE QUIERO APLICAR, EN ESTE CASO EN LA CARPETA APP
 
 import Link from 'next/link'
 import React from 'react'
@@ -20,7 +21,7 @@ const NotFound = () => {
         ></span>
 
         <span className="relative block px-8 py-3 bg-[#1A2238] border border-current">
-          <Link href="/dashboard">Go Home</Link>
+          <Link href="/dashboard/pokemons">Volver a los pokemons</Link>
         </span>
       </a>
     </button>
